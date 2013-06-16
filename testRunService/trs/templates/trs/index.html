@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Test Run Service</title> 
+</head>
+<body style="font-family: 'Crete Round',Georgia,'Times New Roman',Times,serif;">
+
+    <h1 style="text-align: center; font-size: 36px; margin-bottom: 20px;">Test Run Service.</h1>
+    <div>
+    <h3>Run test:</h3>
+    <form action="" method="get" style="margin-bottom: 20px;">
+        <select name="path">
+           {% for test in tests %} 
+                <option value="{{test}}">{{test.name}}</option>
+            {% endfor %}
+        </select>
+        <input type="submit" name="run" value="Run">
+       {% block run_status %}
+       {% endblock %}
+    </form>
+    </div>
+
+    <div>
+    <h3>Show result:</h3>
+    <form action="" method="get" style="margin-top: -30px;">
+        <select name="path">
+            {% for test in tests %} 
+                <option value="{{test}}">{{test.name}}</option>
+            {% endfor %}
+        </select>
+        <input type="submit" name="show" value="Show" style="margin-top: 20px;">
+        {% block show_status %}
+        {% endblock %}
+    </form>
+    {% block test_result %}
+    {% endblock %}
+    </div>
+</body>
+</html>

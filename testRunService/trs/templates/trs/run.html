@@ -1,0 +1,7 @@
+{% extends "trs/index.html" %}
+
+{% block run_status %}
+<div style="color: {{ test_status.color }}; display: inline;">
+    {{ test_status.msg }}
+</div>
+{% endblock %}

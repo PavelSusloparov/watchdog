@@ -1,0 +1,20 @@
+{% extends "trs/index.html" %}
+
+{% block test_result %}
+    <div style="display: inline;">
+    {% if test_result %}
+    <div style="display: block; background: lightgrey; width: 700px; border-radius: 10px; border: 1px solid grey; padding: 10px 0 0 10px">
+        {% for line in test_result %}
+            {{line}}
+            <div style="padding: 5px 0;"></div>
+        {% endfor %}
+    </div>
+    {% endif %}
+    </div>
+{% endblock %}
+
+{% block show_status %}
+    <div style="color: red; display: inline;">
+        {{ show_result }}
+    </div>
+{% endblock %}

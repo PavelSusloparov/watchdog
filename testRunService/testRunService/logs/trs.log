@@ -1,0 +1,49 @@
+[16/Jun/2013 16:21:37] DEBUG [trs.views:27] index:GET: Get path: /home/acekool/.virtualenvs/watchdog/tests/test1.py
+[16/Jun/2013 16:21:37] DEBUG [trs.views:29] index:GET: log_file_full_path: /home/acekool/.virtualenvs/watchdog/tests/test1.log
+[16/Jun/2013 16:21:37] DEBUG [trs.views:52] index:GET:show: logfile: ['test1.py execution\n']
+[16/Jun/2013 16:21:37] DEBUG [trs.views:52] index:GET:show: logfile: ['test1.py execution\n', 'Greate work!\n']
+[16/Jun/2013 16:21:37] DEBUG [trs.views:52] index:GET:show: logfile: ['test1.py execution\n', 'Greate work!\n', 'test1.py execution\n']
+[16/Jun/2013 16:21:37] DEBUG [trs.views:52] index:GET:show: logfile: ['test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n']
+[16/Jun/2013 16:21:37] DEBUG [trs.views:52] index:GET:show: logfile: ['test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n']
+[16/Jun/2013 16:21:37] DEBUG [trs.views:52] index:GET:show: logfile: ['test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n']
+[16/Jun/2013 16:21:37] DEBUG [trs.views:52] index:GET:show: logfile: ['test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n']
+[16/Jun/2013 16:21:37] DEBUG [trs.views:52] index:GET:show: logfile: ['test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n']
+[16/Jun/2013 16:21:37] DEBUG [trs.views:52] index:GET:show: logfile: ['test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n']
+[16/Jun/2013 16:21:37] DEBUG [trs.views:52] index:GET:show: logfile: ['test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n']
+[16/Jun/2013 16:21:37] DEBUG [trs.views:52] index:GET:show: logfile: ['test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n']
+[16/Jun/2013 16:21:37] DEBUG [trs.views:52] index:GET:show: logfile: ['test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n']
+[16/Jun/2013 16:21:37] DEBUG [trs.views:52] index:GET:show: logfile: ['test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n']
+[16/Jun/2013 16:21:37] DEBUG [trs.views:52] index:GET:show: logfile: ['test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n']
+[16/Jun/2013 16:21:37] DEBUG [trs.views:52] index:GET:show: logfile: ['test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n']
+[16/Jun/2013 16:21:37] DEBUG [trs.views:52] index:GET:show: logfile: ['test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n']
+[16/Jun/2013 16:21:37] DEBUG [trs.views:52] index:GET:show: logfile: ['test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n']
+[16/Jun/2013 16:21:37] DEBUG [trs.views:52] index:GET:show: logfile: ['test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n']
+[16/Jun/2013 16:21:37] DEBUG [trs.views:52] index:GET:show: logfile: ['test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n']
+[16/Jun/2013 16:21:37] DEBUG [trs.views:52] index:GET:show: logfile: ['test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n', 'test1.py execution\n', 'Greate work!\n']
+[16/Jun/2013 16:25:02] DEBUG [trs.views:27] index:GET: Get path: /home/acekool/.virtualenvs/watchdog/tests/test1.py
+[16/Jun/2013 16:25:02] DEBUG [trs.views:29] index:GET: log_file_full_path: /home/acekool/.virtualenvs/watchdog/tests/test1.log
+[16/Jun/2013 16:25:12] DEBUG [trs.views:34] index:GET:run: status: 0
+[16/Jun/2013 16:25:12] DEBUG [trs.views:42] index:GET:run: test_status: {'color': 'green', 'msg': 'Test was finished.'}
+[16/Jun/2013 16:40:43] DEBUG [trs.views:27] index:GET: Get path: /home/acekool/.virtualenvs/watchdog/tests/test1.py
+[16/Jun/2013 16:40:43] DEBUG [trs.views:29] index:GET: log_file_full_path: /home/acekool/.virtualenvs/watchdog/tests/test1.log
+[16/Jun/2013 16:40:53] DEBUG [trs.views:34] index:GET:run: status: 0
+[16/Jun/2013 16:40:53] DEBUG [trs.views:42] index:GET:run: test_status: {'color': 'green', 'msg': 'Test was finished.'}
+[16/Jun/2013 16:42:04] DEBUG [trs.views:27] index:GET: Get path: /home/acekool/.virtualenvs/watchdog/tests/test1.py
+[16/Jun/2013 16:42:04] DEBUG [trs.views:29] index:GET: log_file_full_path: /home/acekool/.virtualenvs/watchdog/tests/test1.log
+[16/Jun/2013 16:42:14] DEBUG [trs.views:34] index:GET:run: status: 0
+[16/Jun/2013 16:42:14] DEBUG [trs.views:42] index:GET:run: test_status: {'color': 'green', 'msg': 'Test was finished.'}
+[16/Jun/2013 16:42:17] DEBUG [trs.views:27] index:GET: Get path: /home/acekool/.virtualenvs/watchdog/tests/nonexistent.py
+[16/Jun/2013 16:42:17] DEBUG [trs.views:29] index:GET: log_file_full_path: /home/acekool/.virtualenvs/watchdog/tests/nonexistent.log
+[16/Jun/2013 16:42:17] DEBUG [trs.views:34] index:GET:run: status: 512
+[16/Jun/2013 16:42:17] WARNING [trs.views:38] index:GET:run: /home/acekool/.virtualenvs/watchdog/tests/nonexistent.py file can not be run. Reason: Can not find test. Please provide correct pass.
+[16/Jun/2013 16:42:23] DEBUG [trs.views:27] index:GET: Get path: /home/acekool/.virtualenvs/watchdog/tests/nonexistent.py
+[16/Jun/2013 16:42:23] DEBUG [trs.views:29] index:GET: log_file_full_path: /home/acekool/.virtualenvs/watchdog/tests/nonexistent.log
+[16/Jun/2013 16:42:23] WARNING [trs.views:58] index:GET:show: /home/acekool/.virtualenvs/watchdog/tests/nonexistent.py file can not be showen. Reason: Logfile is not exist or empty.
+[16/Jun/2013 16:42:37] DEBUG [trs.views:27] index:GET: Get path: /home/acekool/.virtualenvs/watchdog/tests/nonexistent.py
+[16/Jun/2013 16:42:37] DEBUG [trs.views:29] index:GET: log_file_full_path: /home/acekool/.virtualenvs/watchdog/tests/nonexistent.log
+[16/Jun/2013 16:42:37] DEBUG [trs.views:34] index:GET:run: status: 512
+[16/Jun/2013 16:42:37] WARNING [trs.views:38] index:GET:run: /home/acekool/.virtualenvs/watchdog/tests/nonexistent.py file can not be run. Reason: Can not find test. Please provide correct pass.
+[16/Jun/2013 17:40:00] DEBUG [trs.views:27] index:GET: Get path: /home/acekool/.virtualenvs/watchdog/tests/test1.py
+[16/Jun/2013 17:40:00] DEBUG [trs.views:29] index:GET: log_file_full_path: /home/acekool/.virtualenvs/watchdog/tests/test1.log
+[16/Jun/2013 17:40:10] DEBUG [trs.views:34] index:GET:run: status: 0
+[16/Jun/2013 17:40:10] DEBUG [trs.views:42] index:GET:run: test_status: {'color': 'green', 'msg': 'Test was finished.'}
