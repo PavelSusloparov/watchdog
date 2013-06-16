@@ -1,0 +1,78 @@
+INSTALL AND CONFIGURIN WATCHDOG ENV
+
+Installing pip
+
+	sudo apt-get install python-pip python-dev build-essential
+	sudo pip install --upgrade pip
+
+Setting up virtualenv
+	pip install virtualenvwrapper
+
+Open .bash_profile( sudo vim ~/.bash_profile) and set the following lines:
+
+	export WORKON_HOME=$HOME/.virtualenvs
+	source /usr/local/bin/virtualenvwrapper.sh
+
+Reload yor startup file
+
+	source ~/.bash_profile
+
+Creating virtualenv for the project
+
+	mkvirtualenv watchdog --no-site-packages
+
+After the upload navigate to your watchdog directory
+	cd ~/.virtualenv/watchdog/
+
+Make sure you're working on the virtualenv of that particular project, if not
+	workon watchdog
+
+Install the dependencies in requirements.txt via pip(You can find requirements.txt in archive)
+	pip install -r requirements.txt
+
+INSTALL AND CONFIGURING APACHE
+
+Install apache2 and some required components
+	sudo apt-get install apache2 apache2.2-common apache2-mpm-prefork apache2-utils libexpat1
+
+install mod_wsgi
+	sudo apt-get install libapache2-mod-wsgi
+
+Open your apache server configuration( cd /etc/apache2/apache2.conf) and set the following lines in the end of file. 
+
+	NameVirtualHost localhost
+	ServerName localhost
+
+After install make sure you restart apache for the changes to take effect
+	sudo service apache2 restart
+
+Copy apache configuration file(apache2/trs) in apache sites-available directory.
+Copy mod_wsgi configuration folder(www/trs) to /var/www/trs/.
+
+Edit /var/www/trs/index.wsgi file
+
+change section: # Add the app's directory to the PYTHONPATH
+put your path to testRunService project(home path espesially) into append method arguments.
+
+STATIC FILES
+
+Go to testRunService:
+	<<YOUR HOME PATH>>/.virtualenvs/watchdog/testRunService
+
+Run collectstatic operation:
+	python manage.py collectstatic
+
+Apache should be set now. Restart apache for the changes on your virtual host to take effect and everything should work well.
+sudo service apache2 restart
+
+
+Create mysql database, create user and grant permissions.
+mysql -u root -p
+Enter your password
+
+create database trs;
+show tables;
+create user 'trs'@'trs' identified by 'trs';
+grant all privileges on * . * to 'trs'@'localhost';
+
+
