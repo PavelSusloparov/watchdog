@@ -1,148 +1,26 @@
-DEFENITION
-    TRS Test Run Service
+Watchdog service.
 
-DEPLOY PROCESS
+    The system is provide functionality of Test Run Service shadow.
+    It can be easily rewrite for any service, which run under apache.
+    System language: python language.
 
-    INSTALL AND CONFIGURE WATCHDOG ENV
+    For deploy and how to use Test Run Service read testRunService README.
 
-    Installing pip
+    Watchdog service simple run.
 
-        sudo apt-get install python-pip python-dev build-essential
-        sudo pip install --upgrade pip
+    Run watchdog service with all option. For more information run service with -h option.
+        python watchdog_service.py -a
 
-    Setting up virtualenv
-        pip install virtualenvwrapper
+    Version 0.1
 
-    Open .bash_profile( sudo vim ~/.bash_profile) and set the following lines:
+    - Watch on apache process. Restart apache if it is down.
+    - Watch on Test Run Service log. Mail to administrator if service has ERROR messages.
+    - Get system metrics.
 
-        export WORKON_HOME=$HOME/.virtualenvs
-        source /usr/local/bin/virtualenvwrapper.sh
+    ToDo List:
 
-    Reload yor startup file
+    - Implement mail sending.
+    - Properly handle system metrics. Write them to database. Create daily database backup under cron.
 
-        source ~/.bash_profile
-
-    Creating virtualenv for the project
-
-        mkvirtualenv watchdog --no-site-packages
-
-    After the upload navigate to your watchdog directory
-        cd ~/.virtualenv/watchdog/
-
-    Make sure you're working on the virtualenv of that particular project, if not
-        workon watchdog
-
-    Install the dependencies in requirements.txt via pip(You can find requirements.txt in archive)
-        pip install -r requirements.txt
-
-    INSTALL AND CONFIGURING APACHE
-
-    Install apache2 and some required components
-        sudo apt-get install apache2 apache2.2-common apache2-mpm-prefork apache2-utils libexpat1
-
-    install mod_wsgi
-        sudo apt-get install libapache2-mod-wsgi
-
-    Open your apache server configuration( vim /etc/apache2/apache2.conf) and set the following lines in the end of file.
-
-        NameVirtualHost localhost
-        ServerName localhost:80
-
-    Copy apache configuration file(apache2/trs) in apache 'sites-available' directory.
-    Enable trs site.
-        sudo a2ensite trs
-
-    Change /etc/hosts
-        Add 127.0.0.0 acekool
-
-    After all make sure you restart apache for the changes to take effect
-        sudo service apache2 restart
-
-    Edit /var/www/trs/index.wsgi file
-
-    change section: # Add the app's directory to the PYTHONPATH
-    put your path to testRunService project(home path espesially) into append method arguments.
-
-    STATIC FILES
-
-    Create /var/www/trs directory
-        sudo mkdir -p /var/www/trs
-
-    Go to testRunService:
-        cd <<YOUR HOME PATH>>/.virtualenvs/watchdog/testRunService
-
-    Run 'collectstatic' operation:
-        python manage.py collectstatic
-
-    Your static files now in /var/www/trs.
-
-    Change user and group for /var/www/trs directory
-        cd /var/www
-        sudo chown -R www-data:www-data trs
-        sudo chmod 750 trs
-
-    Apache should be set now. Restart apache for the changes on your virtual host to take effect and everything should work well.
-        sudo service apache2 restart
-
-
-    DATABASE WORK
-
-    Create mysql database, create user and grant permissions.
-        mysql -u root -p
-        Enter your password
-
-        create database trs;
-        show tables;
-        create user 'trs'@'trs' identified by 'trs';
-        grant all privileges on * . * to 'trs'@'localhost';
-
-    Create tables in trs database.
-
-        cd <<YOUR HOME PATH>>/.virtualenvs/watchdog/testRunService
-        python manage.py syncdb
-
-    Create superuser for django admin.
-
-        cd <<YOUR HOME PATH>>/.virtualenvs/watchdog/testRunService
-        python ./manage.py createsuperuser
-
-        username: admin
-        password: admin
-
-    TRY TO LAUNCH SITE
-        Open browser.
-        Go to acekool/trs
-
-    TROUBLESHOOTING
-        For question please contact with Pavel Susloparov. piritandroid@gmail.com
-
-        Also you can go deep into log:
-            TRS service log.
-            less <<YOUR HOME PATH>>/.virtualenvs/watchdog/testRunService/testRunService/logs/trs.log
-
-            Apache log.
-            less /etc/apache2/error.log
-
-HOW TO TRS USE DOCUMENTATION
-
-    Add tests to system.
-    Go to acekool/trs/admin
-
-    Login: admin
-    Password: admin
-
-    Click on Tests section and add new test pathes
-
-    <<YOUR HOME PATH>>/.virtualenvs/watchdog/tests/test1.py
-    <<YOUR HOME PATH>>/.virtualenvs/watchdog/tests/test2.py
-    <<YOUR HOME PATH>>/.virtualenvs/watchdog/tests/nonexistent.py
-
-    Run tests.
-        Go to acekool/trs
-        Choose test from drop down list 1 and click Run button. Check test result.
-
-    Show results.
-        Choose previously running test from drop down list 2 and click Show button.
-        Check result.
 
 
