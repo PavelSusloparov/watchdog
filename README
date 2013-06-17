@@ -4,23 +4,28 @@ Watchdog service.
     It can be easily rewrite for any service, which run under apache.
     System language: python language.
 
-    For deploy and how to use Test Run Service read testRunService README.
+    For service correct work please run Test Run Service under apache.
+        For deploy and how to use Test Run Service read testRunService README.
 
     Watchdog service simple run.
 
-    Run watchdog service with all option. For more information run service with -h option.
+        Run watchdog service with all option. For more information run service with -h option.
+        
         python watchdog_service.py -a
 
     Version 0.1
 
-    - Watch on apache process. Restart apache if it is down.
-    - Watch on Test Run Service log. Mail to administrator if service has ERROR messages.
-    - Get system metrics.
+        - Watch on apache process. Restart apache if it is down.
+        - Watch on Test Run Service log. Mail to administrator if service has ERROR messages.
+        - Get system metrics.
 
-    ToDo List:
-
-    - Implement mail sending.
-    - Properly handle system metrics. Write them to database. Create daily database backup under cron.
+        ToDo List:
+            - Implement mail sending.
+            - Properly handle system metrics. Write them to database. Create daily database backup under cron.
+        The system is pretty raw now. It is test task, so the main goal was watchdog_service.py
+        TRS is a little more complicated with apache configuration, but they are blocks for one system.
+        
+        If your are interested in it, please let me know.
 
 
 
