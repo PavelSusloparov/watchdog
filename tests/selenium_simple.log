@@ -1,0 +1,2 @@
+21.0 Firefox on Ubuntu is a little buggy. Check 'firefox' from command line.
+ Got 'GLib-CRITICAL **: g_slice_set_config: assertion sys_page_size == 0 failed' error.

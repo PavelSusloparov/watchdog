@@ -1,0 +1,46 @@
+body{
+    font-family: 'Crete Round',Georgia,'Times New Roman',Times,serif;
+}
+
+h1{
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.run_form{
+    margin-bottom: 20px;
+}
+
+.show_form{
+    margin-top: -30px;
+}
+
+.show_button{
+    margin-top: 20px;
+}
+
+.test_result_position{
+    display: inline;
+}
+
+.test_result_view{
+    display: block;
+    background: lightgrey;
+    width: 700px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    padding: 10px 0 0 10px;
+}
+
+.separator{
+    padding: 5px 0;
+}
+
+.show_status{
+    color: red;
+    display: inline;
+}
+
+
+
