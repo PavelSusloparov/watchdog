@@ -77,7 +77,7 @@ STATICFILES_DIRS = (
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    "/home/acekool/.virtualenvs/watchdog/testRunService/static/",
+    "/home/acekool/.virtualenvs/watchdog/watchdog/testRunService/static/",
 )
 
 # List of finder classes that know how to find static files in
@@ -127,6 +127,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.admin',
+    'main',
     'trs',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
@@ -188,6 +189,11 @@ LOGGING = {
             'propagate': True,
         },
         'trs.forms': {
+            'handlers': ['console', 'app_log'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+        'main.views': {
             'handlers': ['console', 'app_log'],
             'level': 'DEBUG',
             'propagate': True,

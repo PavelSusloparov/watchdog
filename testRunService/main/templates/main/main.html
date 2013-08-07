@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Services</title>
+   <link href="/static/css/style.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body>
+
+    <h1>Services.</h1>
+    <ul>
+        {% for app_name, app_prefix in applications.items %}
+        <li><a href="http://{{host}}{{app_prefix}}">{{app_name}}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
